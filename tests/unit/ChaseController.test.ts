@@ -1,0 +1,73 @@
+import { expect, test } from 'vitest';
+import { ChaseController } from '../../src/protest/ChaseController';
+import { pursuerById } from '../../src/characters/PursuerDefinitions';
+test('mistakes close the lead once, invulnerability prevents repeated contact damage', () => {
+  const chase = new ChaseController();
+  expect(chase.hit()).toBe(true);
+  expect(chase.hit()).toBe(false);
+  chase.update(1.3);
+  expect(chase.pressure).toBeLessThan(0.6);
+  chase.hit();
+  chase.update(1.3);
+  chase.hit();
+  expect(chase.caught).toBe(true);
+  chase.reset();
+  expect(chase.hitCount).toBe(0);
+  expect(chase.caught).toBe(false);
+  expect(chase.pressure).toBe(0.2);
+});
+test('clean running restores the lead without exceeding bounds', () => {
+  const c = new ChaseController();
+  c.hit();
+  c.update(100);
+  expect(c.pressure).toBe(0.2);
+});
+test('hard pursuers start closer and two nearby stumbles end a Baba run', () => {
+  const chase = new ChaseController();
+  chase.reset(pursuerById('baba'));
+  expect(chase.pressure).toBe(0.3);
+  chase.hit();
+  chase.update(1.3);
+  chase.hit();
+  expect(chase.caught).toBe(true);
+});
+test('extreme crowds gain on clean running, while tokens restore the lead', () => {
+  const chase = new ChaseController();
+  const profile = pursuerById('rss');
+  chase.reset(profile);
+  chase.update(10);
+  expect(chase.pressure).toBeCloseTo(0.415);
+  chase.collectToken();
+  expect(chase.pressure).toBeCloseTo(0.403);
+  for (let i = 0; i < 100; i++) chase.collectToken();
+  expect(chase.pressure).toBe(profile.startingPressure);
+  chase.update(1000);
+  expect(chase.pressure).toBe(1);
+  expect(chase.caught).toBe(true);
+  chase.reset();
+  chase.update(1000);
+  expect(chase.pressure).toBe(0.2);
+});
+
+test('reinforcements tighten recovery and stumbles for this run without mutating the saved pursuer profile', () => {
+  const profile = pursuerById('mobi');
+  const original = { ...profile };
+  const chase = new ChaseController();
+  chase.reset(profile);
+  chase.reinforce();
+  expect(chase.pressure).toBeCloseTo(0.28);
+  chase.update(1);
+  expect(chase.pressure).toBeCloseTo(0.2728);
+  expect(chase.hit()).toBe(true);
+  expect(chase.pressure).toBeCloseTo(0.7228);
+  expect(profile).toEqual(original);
+  chase.reset(profile);
+  expect(chase.pressure).toBe(0.2);
+  expect(chase.hit()).toBe(true);
+  expect(chase.pressure).toBeCloseTo(0.6);
+  chase.reset();
+  chase.pressure = 0.94;
+  chase.reinforce();
+  expect(chase.pressure).toBe(0.95);
+  expect(chase.caught).toBe(false);
+});

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "abhiteep",
+    "prompt": "Use case: style-transfer. Edit target: the attached avatar portrait. Redraw it COMPLETELY as an unmistakable flat 2D arcade cartoon mascot, replacing its photographic face and rendering. Keep only broad hairstyle, facial-hair, eyewear and clothing cues. Do NOT preserve exact facial identity or real human facial proportions. Huge bobble-head, tiny narrow shoulders, short neck, tiny simple dot/oval eyes, a funny rounded oversized geometric nose. Dark navy thick smooth outlines, clean vector-like flat color fills, only one hard-edged cel shadow per area, no gradients on the character. Cheerful comic sticker aesthetic. Facial features should look invented and simplified. Square chest-up centered portrait, full hair visible with 8% margin, character fills frame. Solid deep teal #172d37 background. No photorealism, no realistic 3D render, no skin pores, no hair strands, no realistic eyes, no natural skin texture, no detailed wrinkles, no photo lighting. No text, letters, logos, flags, labels, watermark or additional people. Subject: a chunky rounded head, very thick dark rounded beard and moustache drawn as 2 large simple masses, unruly swept black hair in 5 chunky pointed tufts, strong eyebrows, medium brown skin, charcoal olive polo shirt, mildly stubborn comical expression",
+    "asset": "src/assets/avatars/abhiteep-v3.webp",
+    "tool": "built-in image_gen",
+    "reference": "src/assets/avatars/abhiteep-v2.webp"
+  },
+  {
+    "id": "german",
+    "prompt": "Use case: style-transfer. Edit target: the attached avatar portrait. Redraw it COMPLETELY as an unmistakable flat 2D arcade cartoon mascot, replacing its photographic face and rendering. Keep only broad hairstyle, facial-hair, eyewear and clothing cues. Do NOT preserve exact facial identity or real human facial proportions. Huge bobble-head, tiny narrow shoulders, short neck, tiny simple dot/oval eyes, a funny rounded oversized geometric nose. Dark navy thick smooth outlines, clean vector-like flat color fills, only one hard-edged cel shadow per area, no gradients on the character. Cheerful comic sticker aesthetic. Facial features should look invented and simplified. Square chest-up centered portrait, full hair visible with 8% margin, character fills frame. Solid deep teal #172d37 background. No photorealism, no realistic 3D render, no skin pores, no hair strands, no realistic eyes, no natural skin texture, no detailed wrinkles, no photo lighting. No text, letters, logos, flags, labels, watermark or additional people. Subject: a tall slim head, oversized swooping dark quiff in 3 chunky shapes, small short dark jaw stubble drawn as a single simple shape, playful wide grin, medium warm skin, charcoal crewneck sweater with a single broad red stripe",
+    "asset": "src/assets/avatars/german-v3.webp",
+    "tool": "built-in image_gen",
+    "reference": "src/assets/avatars/german-v2.webp"
+  },
+  {
+    "id": "pappu",
+    "prompt": "Use case: style-transfer. Edit target: the attached avatar portrait. Redraw it COMPLETELY as an unmistakable flat 2D arcade cartoon mascot, replacing its photographic face and rendering. Keep only broad hairstyle, facial-hair, eyewear and clothing cues. Do NOT preserve exact facial identity or real human facial proportions. Huge bobble-head, tiny narrow shoulders, short neck, tiny simple dot/oval eyes, a funny rounded oversized geometric nose. Dark navy thick smooth outlines, clean vector-like flat color fills, only one hard-edged cel shadow per area, no gradients on the character. Cheerful comic sticker aesthetic. Facial features should look invented and simplified. Square chest-up centered portrait, full hair visible with 8% margin, character fills frame. Solid deep teal #172d37 background. No photorealism, no realistic 3D render, no skin pores, no hair strands, no realistic eyes, no natural skin texture, no detailed wrinkles, no photo lighting. No text, letters, logos, flags, labels, watermark or additional people. Subject: a broad soft head, short wavy dark hair with grey temples drawn in chunky curves, large full grey beard with a dark moustache drawn in 4 simple rounded blocks, slightly puzzled friendly expression, medium warm skin, white polo shirt",
+    "asset": "src/assets/avatars/pappu-v3.webp",
+    "tool": "built-in image_gen",
+    "reference": "src/assets/avatars/pappu-v2.webp"
+  },
+  {
+    "id": "khujliwaal",
+    "prompt": "Use case: style-transfer. Edit target: the attached avatar portrait. Redraw it COMPLETELY as an unmistakable flat 2D arcade cartoon mascot, replacing its photographic face and rendering. Keep only broad hairstyle, facial-hair, eyewear and clothing cues. Do NOT preserve exact facial identity or real human facial proportions. Huge bobble-head, tiny narrow shoulders, short neck, tiny simple dot/oval eyes, a funny rounded oversized geometric nose. Dark navy thick smooth outlines, clean vector-like flat color fills, only one hard-edged cel shadow per area, no gradients on the character. Cheerful comic sticker aesthetic. Facial features should look invented and simplified. Square chest-up centered portrait, full hair visible with 8% margin, character fills frame. Solid deep teal #172d37 background. No photorealism, no realistic 3D render, no skin pores, no hair strands, no realistic eyes, no natural skin texture, no detailed wrinkles, no photo lighting. No text, letters, logos, flags, labels, watermark or additional people. Subject: a pear-shaped head with round cheeks, high forehead, flat side-parted dark hair, oversized rectangular eyeglasses with dark frames, a thick horizontal dark moustache with no beard, small amused smile, medium warm skin, pale blue short-sleeve collared shirt",
+    "asset": "src/assets/avatars/khujliwaal-v3.webp",
+    "tool": "built-in image_gen",
+    "reference": "src/assets/avatars/khujliwaal-v2.webp"
+  }
+]

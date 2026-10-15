@@ -1,0 +1,30 @@
+[
+  {
+    "id": "abhiteep",
+    "prompt": "Use case: stylized-concept. Asset type: single character-selection portrait for a mobile 3D arcade game. Create a polished, recognizable illustrated 3D bust of Abhijeet Dipke, closely preserving the face shape and distinctive appearance of the foreground person in the supplied photo reference. Reference is identity/appearance guidance only. Full rounded dense dark beard and moustache, broad lower face and short thick tousled black hair with irregular fringe sweeping across forehead; medium brown skin; charcoal olive collared shirt. Frame a single centered chest-up portrait in a square image, full top of hair visible with 8% top margin, shoulders visible, head large and eyes near upper 40% of image, mostly frontal slight three-quarter angle. Rich sculpted detail and lifelike facial proportions, finely modeled hair and beard, warm skin shading, charming high-quality game cinematic render. Avoid generic toy face, huge cartoon eyes, excessive caricature distortion. Neutral confident expression appropriate to the reference. Matte deep teal #172d37 studio background, subtle warm rim light. Original game illustration, not a photograph. No other people, no text, no names, no badges, no flags, no logo, no watermark. Ignore the photo's background and any lettering.",
+    "asset": "src/assets/avatars/abhiteep-v2.webp",
+    "tool": "built-in image_gen",
+    "reference": "https://media.assettype.com/freepressjournal/2026-08-08/y6fpyl2t/Untitled-design-2026-08-08T134255.832.jpg"
+  },
+  {
+    "id": "german",
+    "prompt": "Use case: stylized-concept. Asset type: single character-selection portrait for a mobile 3D arcade game. Create a polished, recognizable illustrated 3D bust of Dhruv Rathee, closely preserving the face shape and distinctive appearance of the foreground person in the supplied photo reference. Reference is identity/appearance guidance only. Longer youthful face, neatly trimmed short stubble beard and moustache, thick lifted dark side-swept quiff, prominent broad friendly smile; charcoal crewneck sweater with a red stripe. Frame a single centered chest-up portrait in a square image, full top of hair visible with 8% top margin, shoulders visible, head large and eyes near upper 40% of image, mostly frontal slight three-quarter angle. Rich sculpted detail and lifelike facial proportions, finely modeled hair and beard, warm skin shading, charming high-quality game cinematic render. Avoid generic toy face, huge cartoon eyes, excessive caricature distortion. Neutral confident expression appropriate to the reference. Matte deep teal #172d37 studio background, subtle warm rim light. Original game illustration, not a photograph. No other people, no text, no names, no badges, no flags, no logo, no watermark. Ignore the photo's background and any lettering.",
+    "asset": "src/assets/avatars/german-v2.webp",
+    "tool": "built-in image_gen",
+    "reference": "https://dhruvrathee.com/assets/img/dhruv-portrait.webp"
+  },
+  {
+    "id": "pappu",
+    "prompt": "Use case: stylized-concept. Asset type: single character-selection portrait for a mobile 3D arcade game. Create a polished, recognizable illustrated 3D bust of Rahul Gandhi, closely preserving the face shape and distinctive appearance of the foreground person in the supplied photo reference. Reference is identity/appearance guidance only. Mature broad face with deep-set eyes, wavy dark hair greying at temples, full strongly salt-and-pepper beard, characteristic brow and nose; pale blue-white polo shirt. Frame a single centered chest-up portrait in a square image, full top of hair visible with 8% top margin, shoulders visible, head large and eyes near upper 40% of image, mostly frontal slight three-quarter angle. Rich sculpted detail and lifelike facial proportions, finely modeled hair and beard, warm skin shading, charming high-quality game cinematic render. Avoid generic toy face, huge cartoon eyes, excessive caricature distortion. Neutral confident expression appropriate to the reference. Matte deep teal #172d37 studio background, subtle warm rim light. Original game illustration, not a photograph. No other people, no text, no names, no badges, no flags, no logo, no watermark. Ignore the photo's background and any lettering.",
+    "asset": "src/assets/avatars/pappu-v2.webp",
+    "tool": "built-in image_gen",
+    "reference": "https://assets.rahulgandhi.in/rg-website/banners/mobile/daromat_en.webp"
+  },
+  {
+    "id": "khujliwaal",
+    "prompt": "Use case: stylized-concept. Asset type: single character-selection portrait for a mobile 3D arcade game. Create a polished, recognizable illustrated 3D bust of Arvind Kejriwal, closely preserving the face shape and distinctive appearance of the foreground person in the supplied photo reference. Reference is identity/appearance guidance only. Broad oval face, higher forehead, short neatly side-parted dark hair, thin silver rectangular eyeglasses, bushy dark moustache with some grey, clean-shaven jaw, calm slight smile; pale blue short-sleeve buttoned shirt. Frame a single centered chest-up portrait in a square image, full top of hair visible with 8% top margin, shoulders visible, head large and eyes near upper 40% of image, mostly frontal slight three-quarter angle. Rich sculpted detail and lifelike facial proportions, finely modeled hair and beard, warm skin shading, charming high-quality game cinematic render. Avoid generic toy face, huge cartoon eyes, excessive caricature distortion. Neutral confident expression appropriate to the reference. Matte deep teal #172d37 studio background, subtle warm rim light. Original game illustration, not a photograph. No other people, no text, no names, no badges, no flags, no logo, no watermark. Ignore the photo's background and any lettering.",
+    "asset": "src/assets/avatars/khujliwaal-v2.webp",
+    "tool": "built-in image_gen",
+    "reference": "https://aamaadmiparty.org/wp-content/uploads/2024/03/AK-Half-Shirt-1-scaled.webp"
+  }
+]

@@ -1,0 +1,7 @@
+import { ISSUES } from '../protest/IssueDefinitions';
+import { icon } from './icons';
+import { setupProgress } from './SetupProgress';
+
+export function issueSelect(selected: string): string {
+  return `<section class="selection panel" data-testid="issue-select">${setupProgress(3)}<div class="section-top"><div><span class="eyebrow">WHAT'S YOUR ISSUE?</span><h2>Pick your awaaz.</h2></div><button class="icon-button" data-action="menu" aria-label="Back to main menu">${icon('close')}</button></div><p class="muted">Choose a campaign. Your avatar will raise its slogans on the run.</p><div class="issue-grid">${ISSUES.map((issue) => `<button class="issue-card ${selected === issue.id ? 'selected' : ''}" data-action="issue" data-id="${issue.id}" data-testid="issue-${issue.id}" aria-pressed="${selected === issue.id}"><span class="issue-symbol" aria-hidden="true">${issue.symbol}</span><h3>${issue.name}</h3><p>${issue.description}</p><blockquote>“${issue.slogans[0].roman}”</blockquote><span class="character-price">${selected === issue.id ? '✓ YOUR ISSUE' : 'CHOOSE THIS ISSUE'}</span></button>`).join('')}</div><p class="parody-note">Player-chosen slogans in a fictional chase. New themes: exam fairness and School Thik Karo.</p><div class="selection-footer setup-footer"><button class="text-button" data-action="locations" data-testid="back-to-location">← BACK TO LOCATIONS</button><button class="primary" data-action="pursuers" data-testid="choose-pursuer">CHOOSE PURSUER ${icon('arrow')}</button></div></section>`;
+}

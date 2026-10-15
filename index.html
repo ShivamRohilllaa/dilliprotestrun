@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#111b25" />
+    <meta
+      name="description"
+      content="Play Dilli Protest Run, a free Delhi-inspired 3D runner game. Dodge obstacles, collect chai tokens and race 1,000 metres. Play on mobile or desktop, no download."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>Dilli Protest Run — Free Online 3D Runner Game</title>
+  </head>
+  <body>
+    <div id="scene" aria-label="3D game world"></div>
+    <div id="app">
+      <div class="loading">
+        <h1>Dilli Protest Run</h1>
+        <p>Free online 3D runner game. Warming up the chai…</p>
+        <p>Enable JavaScript to play. You can still read the game guide below.</p>
+      </div>
+    </div>
+    <section class="site-information" aria-labelledby="about-title">
+      <span class="eyebrow">THE GAME &amp; HOW TO PLAY</span>
+      <h2 id="about-title">Play Dilli Protest Run: a free Delhi runner game</h2>
+      <p>
+        Dilli Protest Run is a fictional Delhi-inspired arcade runner. Choose a cartoon avatar, a
+        location, an issue and a pursuer, then lead your crowd through a three-lane chase. Its
+        characters, slogans and endings are satire, with no affiliation or endorsement.
+      </p>
+      <h3>Make it to 1,000 metres</h3>
+      <p>
+        Move between lanes to avoid obstacles, jump over low barriers and slide under banners.
+        Collect chai tokens along the way. Finish the run to earn 100 bonus tokens and reveal a
+        fictional victory meme. Reaching 80 collected tokens brings extra pursuers into the chase.
+      </p>
+      <ul>
+        <li>Keyboard: use the arrow keys or A/D to move, W or Space to jump, and S to slide.</li>
+        <li>Touch: swipe on the game or use its arrow buttons.</li>
+        <li>
+          Press P or Escape to pause. Settings include sound, reduced motion and graphics quality.
+        </li>
+      </ul>
+      <h3>Your progress stays in this browser</h3>
+      <p>
+        Chai tokens unlock locations; they have no cash value. Your best score, choices and settings
+        are saved locally. There is no player account, and clearing browser data removes this
+        progress. Once loaded, the game can keep running without a network connection.
+      </p>
+      <h3>Play on mobile or desktop</h3>
+      <p>
+        No download or account is needed. Choose Jantar Mantar, India Gate or Ramlila Maidan as your
+        route, with more locations unlocked through play. The game runs in your browser and needs
+        JavaScript and WebGL 2 graphics support.
+      </p>
+      <h3>Having trouble starting the game?</h3>
+      <p>
+        Use an updated browser with graphics acceleration enabled. In desktop Chrome, find “Use
+        graphics acceleration when available” under Settings → System and relaunch the browser after
+        turning it on. On mobile, open the site directly in Chrome or Safari. You can also
+        <a href="?graphics=low">try low graphics</a> to reduce rendering load.
+      </p>
+      <nav class="site-links" aria-label="Site information">
+        <a href="%BASE_URL%privacy.html">Privacy Policy</a>
+        <a href="%BASE_URL%terms.html">Terms &amp; Conditions</a>
+        <a href="%BASE_URL%faq.html">FAQ</a>
+        <a href="mailto:contact@example.com">Contact</a>
+        <a href="#app">Back to the game ↑</a>
+      </nav>
+    </section>
+    <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

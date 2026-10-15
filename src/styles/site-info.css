@@ -1,0 +1,56 @@
+.site-information {
+  position: relative;
+  background: var(--navy);
+  padding: 64px max(24px, calc((100% - 960px) / 2)) 48px;
+  border-top: 1px solid var(--line);
+  line-height: 1.8;
+}
+body[data-state]:not([data-state='MENU']) .site-information {
+  display: none;
+}
+/* The canvas ends above this section instead of following the guide while scrolling. */
+body[data-state='MENU'] #scene {
+  position: absolute;
+  bottom: auto;
+  height: 100svh;
+}
+.site-information h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  margin: 12px 0 20px;
+}
+.site-information h3 {
+  font-size: 20px;
+  margin: 28px 0 10px;
+}
+.site-information p,
+.site-information li {
+  color: #becac7;
+  font-size: 14px;
+}
+.site-information ul {
+  padding-left: 22px;
+}
+.site-information a:focus-visible,
+.footer a:focus-visible {
+  outline: 3px solid #ffd36a;
+  outline-offset: 5px;
+}
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+.footer nav {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer a {
+  font-size: 10px;
+  padding: 15px 0;
+  color: #c7cfc4;
+  text-decoration: none;
+}

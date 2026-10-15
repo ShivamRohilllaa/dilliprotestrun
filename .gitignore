@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.ads-test-dist/
+test-results/
+playwright-report/
+.DS_Store
+.env*
+!.env.example
+.vercel/
+
+# Local account-specific promotional assets and private credentials.
+marketing/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json

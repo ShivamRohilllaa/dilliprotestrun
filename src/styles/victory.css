@@ -1,0 +1,306 @@
+.victory-overlay {
+  background: #08131de0;
+}
+
+.victory-panel {
+  width: min(610px, 100%);
+  max-height: calc(100svh - 40px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 25px 30px 20px;
+  text-align: center;
+  border-color: #eac48260;
+  background: linear-gradient(150deg, #1d3540, #10212d 75%);
+}
+
+.victory-heading .eyebrow {
+  justify-content: center;
+  color: #eac482;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+}
+
+.victory-heading h2 {
+  margin: 12px 0 9px;
+  font-size: clamp(27px, 4.2vw, 38px);
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  color: #fff1d3;
+}
+
+.victory-heading h2 span {
+  color: #eac482;
+}
+
+.victory-heading p {
+  margin: 0 auto 18px;
+  max-width: 390px;
+  color: #bacac6;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.victory-revealed .victory-heading p {
+  color: #ffd3ab;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.victory-meme {
+  overflow: hidden;
+  max-width: 420px;
+  margin: 0 auto;
+  border: 1px solid #eac48250;
+  border-radius: 8px;
+  background: #efe6ce;
+  color: #302e29;
+  transform: rotate(-0.6deg);
+}
+
+.victory-meme-stamp {
+  padding: 10px 8px 8px;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  border-bottom: 1px dashed #9a815345;
+}
+
+.victory-cast {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 8px 22px 0;
+}
+
+.victory-cell {
+  margin: 0;
+  min-width: 0;
+}
+
+.victory-cell-art {
+  position: relative;
+  overflow: hidden;
+  height: 133px;
+  border-radius: 65px 65px 0 0;
+  background: #d4c9af;
+}
+
+.victory-cell-art > svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1.15);
+  transform-origin: center 40%;
+}
+
+.victory-cell figcaption {
+  padding: 7px 0 8px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.victory-bars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.victory-bars i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #435056, #aeb6af 40%, #536268);
+  box-shadow: 3px 0 4px #18292c38;
+}
+
+.victory-bars i:nth-child(1) {
+  left: 17%;
+}
+.victory-bars i:nth-child(2) {
+  left: 50%;
+}
+.victory-bars i:nth-child(3) {
+  left: 83%;
+}
+
+.victory-bars b {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 13%;
+  height: 7px;
+  background: linear-gradient(#aeb6af, #435056);
+  box-shadow: 0 3px 4px #18292c38;
+}
+
+.victory-meme-caption {
+  padding: 9px 12px;
+  background: #303e3d;
+  color: #f7e8c7;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.victory-bonus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin: 19px 0 16px;
+  padding: 13px 16px;
+  text-align: left;
+  color: #f4c681;
+  background: #e5bd6810;
+  border: 1px solid #e5bd6840;
+  border-radius: 6px;
+}
+
+.victory-bonus > span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.victory-bonus small {
+  display: block;
+  padding-top: 4px;
+  color: #aabdb7;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.victory-bonus strong {
+  flex-shrink: 0;
+  font-size: 25px;
+  letter-spacing: -0.5px;
+}
+
+.victory-bonus strong span {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.victory-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  margin: 0 0 19px;
+}
+
+.victory-stats dt {
+  color: #aabdb7;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.victory-stats dd {
+  margin: 5px 0 0;
+  font-size: 19px;
+  font-weight: 800;
+  color: #f3ebd9;
+}
+
+.victory-stats small {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.victory-release {
+  width: 100%;
+  gap: 12px;
+  margin: 0 0 10px;
+  padding: 16px 12px;
+}
+
+.victory-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.victory-actions button {
+  min-width: 0;
+  min-height: 45px;
+  padding: 14px 10px;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+}
+
+.victory-fiction {
+  margin: 13px auto 0;
+  max-width: 370px;
+  color: #94aaa7;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+@media (max-width: 480px) {
+  .victory-overlay {
+    padding: 10px;
+  }
+  .victory-panel {
+    max-height: calc(100svh - 20px);
+    padding: 20px 17px 16px;
+  }
+  .victory-heading h2 {
+    font-size: 29px;
+  }
+  .victory-heading .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+  .victory-heading p {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .victory-revealed .victory-heading p {
+    font-size: 15px;
+  }
+  .victory-cast {
+    gap: 12px;
+    padding: 8px 15px 0;
+  }
+  .victory-cell-art {
+    height: 120px;
+  }
+  .victory-cell figcaption {
+    font-size: 10px;
+  }
+  .victory-meme-stamp {
+    letter-spacing: 1px;
+    font-size: 8px;
+  }
+  .victory-bonus {
+    padding: 12px;
+    margin: 16px 0;
+  }
+  .victory-bonus strong {
+    font-size: 23px;
+  }
+  .victory-stats {
+    gap: 5px;
+  }
+  .victory-stats dt {
+    font-size: 8px;
+  }
+  .victory-stats dd {
+    font-size: 17px;
+  }
+  .victory-release {
+    font-size: 10px;
+  }
+}
+
+@media (max-height: 620px) and (min-width: 600px) {
+  .victory-panel {
+    max-height: calc(100svh - 24px);
+  }
+  .victory-overlay {
+    padding: 12px;
+  }
+}
